@@ -1,0 +1,18 @@
+<%= form_for @movies do |newmovie|%>
+<div class="">
+    <%= newmovie.label :title %>
+    <%= newmovie.text_field :title %>
+</div>
+<div class="">
+    <%= newmovie.label :description %>
+    <%= newmovie.text_area :description %>
+</div>
+<div class="">
+    <%= newmovie.label :url %>
+    <%= newmovie.text_field :url %>
+</div>
+<div class="">
+    <%= newmovie.submit %>
+    
+</div>
+<% end %>

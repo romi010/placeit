@@ -1,0 +1,26 @@
+<div class="container">
+    
+    <div class="vertical-menu">
+        <a class="logo"href="#"><strong>Place</strong>it</a>
+        <a href="#">Reservas</a>
+        <a href="#">Peliculas</a>
+        <a class="decoration"></a>
+    </div>
+    
+    <div class="grid-container">
+        <div class="box1">
+            <h1>Peliculas</h1>
+            <button class="button">
+                <a>
+                    <%= link_to "+ Crear nueva pelicula", movies_new_path %>
+                </a>
+            </button>
+        </div>
+        <div class="imgcontainer">
+            <% @movies.each do |movie| %>
+                <img src="<%= movie.url%>" alt="">
+            <% end %>
+        </div>
+    </div>
+
+</div>
